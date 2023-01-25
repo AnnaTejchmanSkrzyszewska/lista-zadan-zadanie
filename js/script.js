@@ -18,8 +18,8 @@
             <li
             ${task.done ? "style=\"text-decoration: line-through\"" : ""}
             >
-             <button class="js-done">zrobione?</button>
-             <button class="js-remove">usun</button>
+             <button class="js-done buttonDone"></button>
+             <button class="js-remove buttonRemove"></button>
             ${task.content}
             </li>
             `;
@@ -45,7 +45,7 @@
     const bindEvents = () => {
         const removeButtons = document.querySelectorAll(".js-remove");
         console.log(removeButtons);
-        
+
         removeButtons.forEach((removeButton, index) => {
             removeButton.addEventListener("click", () => {
                 removeTask(index);

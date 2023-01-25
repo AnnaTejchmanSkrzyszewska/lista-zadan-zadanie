@@ -3,3 +3,9 @@
     margin: 0 auto;
     padding: 0 20px;
 }
+
+.container__header {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+}
