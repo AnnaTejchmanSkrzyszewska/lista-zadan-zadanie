@@ -1,21 +1,13 @@
 .buttonDone {
-    display: flex;
     background-image: url(https://i.postimg.cc/x8FHCPxr/toDoR.png);
     width: 30px;
     height: 30px;
     border: none;
-    align-items: baseline;
-    flex-direction: row;
-    justify-content: space-between;
 }
 
 .buttonRemove {
-    display: flex;
     background-image: url(https://i.postimg.cc/Pr9rRn1W/binR.png);
     width: 30px;
     height: 30px;
     border: none;
-    align-items: baseline;
-    flex-direction: row;
-    justify-content: flex-end;
 }

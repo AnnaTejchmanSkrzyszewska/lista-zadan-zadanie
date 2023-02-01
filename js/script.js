@@ -19,8 +19,8 @@
             ${task.done ? "style=\"text-decoration: line-through\"" : ""}
             >
              <button class="js-done buttonDone"></button>
-             <button class="js-remove buttonRemove"></button>
             ${task.content}
+            <button class="js-remove buttonRemove"></button>
             </li>
             `;
         }
