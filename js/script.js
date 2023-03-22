@@ -1,13 +1,6 @@
 {
     const tasks = [
-        {
-            content: "zrobic zadanie",
-            done: false,
-        },
-        {
-            content: "zjesc drugie sniadanie",
-            done: true,
-        },
+      
     ];
 
     const render = () => {
@@ -70,13 +63,15 @@
         const onFormSubmit = (event) => {
             event.preventDefault();
 
-            const newTaskContent = document.querySelector(".js-newTask").value.trim();
+            const newTask = document.querySelector(".js-newTask");
+            const newTaskContent = newTask.value.trim();
 
             if (newTaskContent === "") {
                 return;
             }
 
             addNewTask(newTaskContent);
+            newTask.value = "";
         };
 
         const init = () => {
