@@ -1,6 +1,6 @@
 {
     const tasks = [
-      
+
     ];
 
     const render = () => {
@@ -49,38 +49,38 @@
 
         toggleDoneButtons.forEach((toggleDoneButton, index) => {
             toggleDoneButton.addEventListener("click", () => {
-                toggleDoneTask(index);    
+                toggleDoneTask(index);
             });
         });
     }
 
-        const removeTask = (taskIndex) => {
-            tasks.splice(taskIndex, 1);
+    const removeTask = (taskIndex) => {
+        tasks.splice(taskIndex, 1);
 
-            render();
+        render();
+    }
+
+    const onFormSubmit = (event) => {
+        event.preventDefault();
+
+        const newTask = document.querySelector(".js-newTask");
+        const newTaskContent = newTask.value.trim();
+
+        if (newTaskContent === "") {
+            return;
         }
 
-        const onFormSubmit = (event) => {
-            event.preventDefault();
+        addNewTask(newTaskContent);
+        newTask.value = "";
+    };
 
-            const newTask = document.querySelector(".js-newTask");
-            const newTaskContent = newTask.value.trim();
+    const init = () => {
+        render();
 
-            if (newTaskContent === "") {
-                return;
-            }
+        const form = document.querySelector(".js-form");
 
-            addNewTask(newTaskContent);
-            newTask.value = "";
-        };
+        form.addEventListener("submit", onFormSubmit);
+    };
 
-        const init = () => {
-            render();
-
-            const form = document.querySelector(".js-form");
-
-            form.addEventListener("submit", onFormSubmit);
-        };
-
-        init();
-    }
+    init();
+}
