@@ -7,5 +7,12 @@
 .container__header {
     background-color: #fff;
     padding: 20px;
-    margin: 1px;
+    margin: 0px;
+    margin-bottom: 1px, grey; 
+}
+
+.container__header--section {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 5px, grey;
 }
