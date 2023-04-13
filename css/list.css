@@ -1,5 +1,21 @@
 .list__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     list-style-type: none;
+    
+}
+
+.list__item  span{
+ display: flex;
+ align-items: center;
+ padding-left: 20px;
+}
+
+.list__item  span button{
+    margin-right: 10px;
+   }
+.list__item + .list__item {
     margin-top: 20px;
 }
 
