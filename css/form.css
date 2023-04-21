@@ -29,3 +29,8 @@
     background-color: hsl(180, 100%, 35%);
 }
 
+@media (max-width: 767px) {
+.form__button {
+    width: 100%;
+}
+}
