@@ -7,6 +7,10 @@ html {
 }
 
 body {
+    margin: 0 auto;
+    width: 1000px;
+    max-width: 90%;
     font-family: 'Montserrat', sans-serif;
     background-color: #ebeeee;
+    word-break: break-word;
 }
