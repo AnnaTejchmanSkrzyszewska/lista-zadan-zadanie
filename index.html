@@ -29,22 +29,19 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
 </head>
-<body>
-    <h1>Lista zadań</h1>
+<body>    
     <section>
-        <h2 class="container__header">Dodaj nowe zadanie</h2>
-        <form class="form js-form">
-            <fieldset class="form__fieldset">
-                <input class="js-newTask form__field" placeholder="Co jest do zrobienia?" autofocus>
-                <button class="form__button">Dodaj zadanie</button>
-            </fieldset>
+        <h1>Lista zadań</h1>
+        <h2 class="section__container section__title">Dodaj nowe zadanie</h2>
+        <form class="section__container js-form">
+                <input class="section__newTaskInput js-newTask" placeholder="Co jest do zrobienia?" autofocus>
+                <button class="section__addNewTaskButton">Dodaj zadanie</button>
         </form>
     </section>
-    <p></p>
     <section>
-        <h2 class="container__header">Lista zadań</h2>
-        <div class="container__header--section"></div>
-            <ul class="js-tasks list"></ul>
+        <h2 class="section__container section__container--TopGap section__title">Lista zadań</h2>
+        <aside class="section__container"></aside>
+            <ul class="section__taskList js-tasks"></ul>
         </form>
     </section>
 </body>
